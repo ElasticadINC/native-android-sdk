@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="6dp"
+    tools:context="eanative.EANativeActivity" >
+
+    <TextView
+        android:id="@+id/ad_title_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:tag="eanative_tag_title"
+        android:text="Title Ad"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#6D6D6D"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/eanative_brand_frame"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp" >
+
+      <com.android.volley.toolbox.VolleyImageView
+          android:id="@+id/ad_image_view"
+          android:layout_width="100dp"
+          android:layout_height="match_parent"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentTop="true"
+          android:clickable="true"
+          android:src="@drawable/eanative_placeholder"
+          android:tag="eanative_tag_image_square" />
+
+      <LinearLayout
+          android:id="@+id/ad_text_frame"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="110dp"
+          android:layout_marginRight="0dp"
+          android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ad_tag_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-2dp"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:tag="eanative_tag_summary"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#6D6D6D"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+          <RelativeLayout
+              android:id="@+id/eanative_brand_frame"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp" >
+
+              <TextView
+                  android:id="@+id/ad_brand_by"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="0dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginTop="0dp"
+                  android:singleLine="true"
+                  android:text="Sponsored by"
+                  android:textAppearance="?android:attr/textAppearanceSmall"
+                  android:textColor="#B7B5B1"
+                  android:textSize="12sp"
+                  android:textStyle="normal" />
+
+              <com.android.volley.toolbox.VolleyImageView
+                  android:id="@+id/ad_brand_logo"
+                  android:layout_width="wrap_content"
+                  android:layout_height="16dp"
+                  android:layout_centerVertical="true"
+                  android:layout_gravity="center"
+                  android:layout_toRightOf="@id/ad_brand_by"
+                  android:src="@drawable/eanative_placeholder" 
+                  android:tag="eanative_tag_brand_logo"
+                  />
+
+          </RelativeLayout>
+      </LinearLayout>
+   </RelativeLayout>
+</LinearLayout>
