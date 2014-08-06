@@ -5,7 +5,7 @@ The  NativeAd Android SDK facilitates inserting native mobile ads into a ListVie
 
 Dependency
 ===========
-NativeAd Android SDK uses the new Google Advertising ID  to identify application users and is not using the legacy  android ID for this scope, to be compliant with the new [Google Play policy](https://support.google.com/googleplay/android-developer/answer/6048248). In order to do this, you will have to add [Google Play Service project](http://developer.android.com/google/play-services/setup.html) as a dependency to EANativeAd SDK
+NativeAd Android SDK uses the new Google Advertising ID  to identify application users and is not using the legacy  android ID for this scope, to be compliant with the new [Google Play policy](https://support.google.com/googleplay/android-developer/answer/6048248). In order to do this, you will have to add [Google Play Service project](http://developer.android.com/google/play-services/setup.html) as a dependency to NativeAd SDK.
 
 Quickstart
 ===========

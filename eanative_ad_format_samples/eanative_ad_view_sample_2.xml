@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
-    tools:context="eanative.EANativeActivity" >
+    tools:context="eanative.android.EANativeActivity" >
 
       <com.android.volley.toolbox.VolleyImageView
           android:id="@+id/ad_image_view"
@@ -84,9 +84,9 @@
                   android:layout_centerVertical="true"
                   android:layout_gravity="center"
                   android:layout_toRightOf="@id/ad_brand_by"
-                  android:src="@drawable/eanative_placeholder" 
-                  android:tag="eanative_tag_brand_logo"
-                  />
+                  android:clickable="true"
+                  android:src="@drawable/eanative_placeholder"
+                  android:tag="eanative_tag_brand_logo" />
 
           </RelativeLayout>
       </LinearLayout>
