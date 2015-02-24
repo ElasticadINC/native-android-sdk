@@ -19,6 +19,8 @@ See our [Quickstart Guide](https://native.atlassian.net/wiki/display/NMS/Integra
 
 Change Log
 ===========
+**Version 1.1** - *Feb 24, 2015*
+	* Support for Android Studio
 **Version 1.0** - *July 23, 2014*
 * First public release!
 
