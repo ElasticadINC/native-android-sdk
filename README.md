@@ -19,6 +19,9 @@ See our [Quickstart Guide](https://native.atlassian.net/wiki/display/NMS/Integra
 
 Change Log
 ===========
+**Version 1.2** - *Mar 4, 2015*
+	* Added AD_LOAD_ERROR event
+	
 **Version 1.1** - *Feb 24, 2015*
 	* Support for Android Studio
 
