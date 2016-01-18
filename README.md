@@ -20,8 +20,10 @@ See our [Quickstart Guide](https://native.atlassian.net/wiki/display/NMS/Integra
 Change Log
 ===========
 **Version 3.0.5** - *Jan 18, 2016*
-* New Features - VAST Teaser
-               - Custom query Params 
+
+New Features 
+* VAST Teaser
+* Custom query Params 
 
 **Version 1.2** - *Mar 4, 2015*
 	* Added AD_LOAD_ERROR event
