@@ -19,6 +19,15 @@ See our [Quickstart Guide](https://native.atlassian.net/wiki/display/NMS/Integra
 
 Change Log
 ===========
+**Version 4.0.9** - *Apr 11, 2016*
+
+New Features 
+* New MediaView Object that supports
+	* Inline video teaser
+	* Multiple images showed in same teaser
+* New Format - see eanative_ad_view_sample_4
+
+
 **Version 3.0.5** - *Jan 18, 2016*
 
 New Features 

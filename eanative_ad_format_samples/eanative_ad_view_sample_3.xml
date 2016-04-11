@@ -32,17 +32,44 @@
         android:layout_height="65dp"
         android:layout_marginTop="5dp" >
 
-      <com.android.volley.toolbox.VolleyImageView
-          android:id="@+id/ad_image_view"
-          android:layout_width="100dp"
-          android:layout_height="match_parent"
-          android:layout_alignParentBottom="true"
-          android:layout_alignParentTop="true"
-          android:clickable="true"
-          android:src="@drawable/eanative_placeholder"
-          android:tag="eanative_tag_image_square" />
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:id="@+id/main_image_frame">
+            <com.android.volley.toolbox.VolleyImageView
+              android:id="@+id/ad_image_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clickable="true"
+              android:src="@drawable/eanative_placeholder"
+              android:tag="eanative_tag_image_square" />
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:tag="eanative_video_teaser_play_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-      <LinearLayout
+                <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:src="@drawable/teaser_video_gradient_overlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rotation="90"
+                    android:layout_centerInParent="true"
+                    android:textSize="30sp"
+                    android:textColor="#ffffff"
+                    android:shadowColor="#66000000"
+                    android:shadowDx="1"
+                    android:shadowDy="0"
+                    android:shadowRadius="1"
+                    android:text="▲"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
           android:id="@+id/ad_text_frame"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
@@ -65,13 +92,13 @@
             android:textSize="12sp"
             android:textStyle="normal" />
 
-          <RelativeLayout
+            <RelativeLayout
               android:id="@+id/eanative_brand_frame"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="5dp" >
 
-              <TextView
+                <TextView
                   android:id="@+id/ad_brand_by"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
@@ -85,7 +112,7 @@
                   android:textSize="12sp"
                   android:textStyle="normal" />
 
-              <com.android.volley.toolbox.VolleyImageView
+                <com.android.volley.toolbox.VolleyImageView
                   android:id="@+id/ad_brand_logo"
                   android:layout_width="wrap_content"
                   android:layout_height="16dp"
@@ -96,7 +123,7 @@
                   android:src="@drawable/eanative_placeholder"
                   android:tag="eanative_tag_brand_logo" />
 
-          </RelativeLayout>
-      </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
    </RelativeLayout>
 </LinearLayout>

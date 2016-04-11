@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/eanative_top_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="@drawable/eanative_custom_background"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/ad_top_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal" >
+
+        <com.android.volley.toolbox.VolleyImageView
+            android:id="@+id/ad_brand_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:clickable="true"
+            android:maxWidth="64dp"
+            android:minWidth="32dp"
+            android:src="@drawable/eanative_placeholder"
+            android:tag="eanative_tag_brand_logo"
+            android:layout_margin="10dp"
+            android:layout_marginRight="3dp" />
+
+        <TextView
+            android:id="@+id/ad_title_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ellipsize="end"
+            android:padding="4dp"
+            android:paddingLeft="0dp"
+            android:singleLine="true"
+            android:tag="eanative_tag_title"
+            android:text="Title Ad"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#6D6D6D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/eanative_tag_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:tag="eanative_tag_summary"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#6D6D6D"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <eanative.android.view.EAMediaView
+            android:id="@+id/ad_media_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:minHeight="150dp"
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="178%"
+            android:clickable="true"
+            android:src="@drawable/eanative_placeholder"
+            android:tag="eanative_tag_media_view" />
+    </android.support.percent.PercentRelativeLayout >
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:layout_toStartOf="@+id/ad_cta_button"
+            android:layout_toLeftOf="@+id/ad_cta_button">
+            <TextView
+                android:id="@+id/eanative_sponsored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="Sponsored"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#777777"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/ad_brand_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:clickable="true"
+                android:singleLine="true"
+                android:tag="eanative_tag_brand_name"
+                android:text="Brand name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/ad_cta_button"
+            android:background="@drawable/eanative_button_background"
+            android:padding="10dp"
+            android:layout_margin="6dp"
+            android:textColor="#444444"
+            android:text="Install Now"
+            android:layout_alignParentRight="true"
+            android:tag="eanative_tag_cta"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
