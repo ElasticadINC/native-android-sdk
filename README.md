@@ -19,7 +19,7 @@ See our [Quickstart Guide](https://native.atlassian.net/wiki/display/NMS/Integra
 
 Change Log
 ===========
-**Version 4.0.10** - *Apr 12, 2016*
+**Version 4.0.11** - *Apr 12, 2016*
 
 New Features 
 * New MediaView Object that supports
